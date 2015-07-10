@@ -1,0 +1,550 @@
+<html>
+<head>
+    <title>Academic Affairs</title>
+    <!-- Libs -->
+    <script type="text/javascript" src="libs/jquery.js"></script><!-- jQuery -->
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css"><!-- bootstrapCSS -->
+    <script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script><!-- bootstrap/jquery -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Mobile First -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><!-- mobile first -->
+
+    <!-- end Libs -->
+
+    <!-- External Sheets -->
+    <script type="text/javascript" src="function.js"></script><!-- javascript/jquery -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- end External Sheets -->
+</head>
+<body>
+    <!-- The Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#">Technical Support</a>
+            <a class="navbar-brand" href="#">Tutoring</a>
+        </div>
+    </nav>
+                        
+    <div class="container">
+        <h2>Academic Affairs</h2>
+        <p>On this page the student shall enter their information for Academic Affairs.</p>
+        <form role="form">
+
+            <!-- Date Picker -->
+            <div class="row">
+                <div class="col-md-2 col-xs-6 pull-right">
+                    <label for="dpicker">Sellect the Date:</label><br>
+                    <input type="date" class="form-control">
+                </div>
+            </div><!-- /. row -->
+            <!-- End Date Picker -->
+
+            <!-- Students Name Box -->
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="sname">Students Name:</label><br>
+                        <input type="sname" class="form-control" id="sname" placeholder="Student Name">
+                    </div>
+                </div>
+
+                <!-- Students School ID Box -->    
+                <div class="col-md-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="sid">Student ID:</label><br>
+                        <input type="sid" class="form-control" id="sid" placeholder="Students School ID">
+                    </div>
+                </div>
+
+            <!--Students Email -->
+                <div class="col-md-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="sid">Student Email:</label><br>
+                        <input type="text" class="form-control" placeholder="User Email" aria-describedby="basic-addon2">
+                        <!--<span class="input-group-addon" id="basic-addon2">@email.itt-tech.edu</span> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Contact Number -->
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="sphone#">Contact Number:</label><br>
+                        <input type="sphone#" class="form-control" id="sphone#" placeholder="555-555-5555">
+                    </div>
+                </div>
+
+            <!-- Students Degree -->
+                <div class="col-md-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="sdegree">Student Degree:</label><br>
+                        <select class="form-control" id="sdegree">
+                            <option>Associates</option>
+                            <option>Bachelor's</option>
+                            <option>Masters</option>
+                        </select>
+                    </div>
+                </div>
+
+            <!-- Students Program -->
+                <div class="col-md-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="sprogram">Program:</label><br>
+                        <select class="form-control" id="sprogram">
+                            <option>Electronics</option>
+                            <option>Software Development</option>
+                            <option>NSA</option>
+                            <option>Project Managment</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!--Students Current Quarter -->
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="squarter">Current Quarter:</label><br>
+                        <select class="form-control" id="squarter">
+                            <option>1 Quarter</option>
+                            <option>2 Quarter</option>
+                            <option>3 Quarter</option>
+                            <option>4 Quarter</option>
+                            <option>5 Quarter</option>
+                            <option>6 Quarter</option>
+                            <option>Capstone</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Student Requested Person -->
+                <div class="col-md-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="scourse">Request Service From:</label><br>
+                        <select class="form-control" id="scourse">
+                            <option>Dean</option>
+                            <option>IT Chairman</option>
+                            <option>Drafting & Design Chairman</option>
+                            <option>Bussiness Chairman</option>
+                            <option>Electronics Chairman</option>
+                            <option>Educations Chairman</option>
+                            <option>School Director</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Student Class Requests -->
+                <!-- <div class="row"> -->
+                <div class="col-md-4 col-xs-12">
+                    <div class="form-group">
+                        <label for="sclass">Class Requests:</label><br>
+                        <select class="form-control" id="srequest">
+                            <option>Class Change</option>
+                            <option>Class Drop</option>
+                            <option>Class Request</option>
+                            <option>Theroy Request</option>
+                            <option>Degree Change</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Students Comment Box -->
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                    <label for="comment">Detailed Reason for this Request :</label><br>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sumbit Request Form -->
+            <div class="row">
+            <div class="col-md-4 col-xs-12 col-md-offset-5">
+                <div class="submit-or-cancel">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                    <!-- Cancel Request Form -->
+                    <button type="cancel" class="btn btn-default">Cancel</button>
+                </div>
+           </div>
+       </div>
+        </form>
+    </div><!-- /. container -->
+
+
+
+
+
+    <!-- test modul 1 -->
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-default btn-lg mybtn" data-toggle="modal" data-target="#myModal">
+  Academic Affairs
+</button>
+
+<!-- Modal -->
+<div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <!-- The Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#">Technical Support</a>
+            <a class="navbar-brand" href="#">Tutoring</a>
+        </div>
+    </nav>
+                        
+    <div class="container">
+        <h2>Academic Affairs</h2>
+        <p>On this page the student shall enter their information for Academic Affairs.</p>
+        <form role="form">
+
+            <!-- Date Picker -->
+            <div class="row">
+                <div class="col-md-2 col-xs-12 col-md-offset-7">
+                    <label for="dpicker">Sellect the Date:</label><br>
+                    <input type="date" class="form-control">
+                </div>
+            </div><!-- /. row -->
+            <!-- End Date Picker -->
+
+            <!-- Students Name Box -->
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="sname">Students Name:</label><br>
+                        <input type="sname" class="form-control" id="sname" placeholder="Student Name">
+                    </div>
+                </div>
+
+                <!-- Students School ID Box -->    
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="sid">Student ID:</label><br>
+                        <input type="sid" class="form-control" id="sid" placeholder="Students School ID">
+                    </div>
+                </div>
+
+            <!--Students Email -->
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="sid">Student Email:</label><br>
+                        <input type="text" class="form-control" placeholder="User Email" aria-describedby="basic-addon2">
+                        <!--<span class="input-group-addon" id="basic-addon2">@email.itt-tech.edu</span> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Contact Number -->
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="sphone#">Contact Number:</label><br>
+                        <input type="sphone#" class="form-control" id="sphone#" placeholder="555-555-5555">
+                    </div>
+                </div>
+
+            <!-- Students Degree -->
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="sdegree">Student Degree:</label><br>
+                        <select class="form-control" id="sdegree">
+                            <option>Associates</option>
+                            <option>Bachelor's</option>
+                            <option>Masters</option>
+                        </select>
+                    </div>
+                </div>
+
+            <!-- Students Program -->
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="sprogram">Program:</label><br>
+                        <select class="form-control" id="sprogram">
+                            <option>Electronics</option>
+                            <option>Software Development</option>
+                            <option>NSA</option>
+                            <option>Project Managment</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!--Students Current Quarter -->
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="squarter">Current Quarter:</label><br>
+                        <select class="form-control" id="squarter">
+                            <option>1 Quarter</option>
+                            <option>2 Quarter</option>
+                            <option>3 Quarter</option>
+                            <option>4 Quarter</option>
+                            <option>5 Quarter</option>
+                            <option>6 Quarter</option>
+                            <option>Capstone</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Student Requested Person -->
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="scourse">Request Service From:</label><br>
+                        <select class="form-control" id="scourse">
+                            <option>Dean</option>
+                            <option>IT Chairman</option>
+                            <option>Drafting & Design Chairman</option>
+                            <option>Bussiness Chairman</option>
+                            <option>Electronics Chairman</option>
+                            <option>Educations Chairman</option>
+                            <option>School Director</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Student Class Requests -->
+                <!-- <div class="row"> -->
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="sclass">Class Requests:</label><br>
+                        <select class="form-control" id="srequest">
+                            <option>Class Change</option>
+                            <option>Class Drop</option>
+                            <option>Class Request</option>
+                            <option>Theroy Request</option>
+                            <option>Degree Change</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Students Comment Box -->
+            <div class="row">
+                <div class="col-md-6    ">
+                    <div class="form-group">
+                    <label for="comment">Detailed Reason for this Request :</label><br>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sumbit Request Form -->
+            <div class="row">
+            <div class="col-md-3 col-xs-12 col-md-offset-2">
+                <div class="submit-or-cancel">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                    <!-- Cancel Request Form -->
+                    <button type="cancel" class="btn btn-default">Cancel</button>
+                </div>
+           </div>
+       </div>
+        </form>
+    </div><!-- /. container -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<!-- test modul 2 -->
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-default btn-lg mybtn" data-toggle="modal" data-target="#myModal">
+  Academic Affairs
+</button>
+
+<!-- Modal -->
+<div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <!-- The Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#">Technical Support</a>
+            <a class="navbar-brand" href="#">Tutoring</a>
+        </div>
+    </nav>
+                        
+    <div class="container">
+        <h2>Academic Affairs</h2>
+        <p>On this page the student shall enter their information for Academic Affairs.</p>
+        <form role="form">
+
+            <!-- Date Picker -->
+            <div class="row">
+                <div class="col-md-2 col-xs-12 col-md-offset-7">
+                    <label for="dpicker">Sellect the Date:</label><br>
+                    <input type="date" class="form-control">
+                </div>
+            </div><!-- /. row -->
+            <!-- End Date Picker -->
+
+            <!-- Students Name Box -->
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="sname">Students Name:</label><br>
+                        <input type="sname" class="form-control" id="sname" placeholder="Student Name">
+                    </div>
+                </div>
+
+                <!-- Students School ID Box -->    
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="sid">Student ID:</label><br>
+                        <input type="sid" class="form-control" id="sid" placeholder="Students School ID">
+                    </div>
+                </div>
+
+            <!--Students Email -->
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="sid">Student Email:</label><br>
+                        <input type="text" class="form-control" placeholder="User Email" aria-describedby="basic-addon2">
+                        <!--<span class="input-group-addon" id="basic-addon2">@email.itt-tech.edu</span> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Contact Number -->
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="sphone#">Contact Number:</label><br>
+                        <input type="sphone#" class="form-control" id="sphone#" placeholder="555-555-5555">
+                    </div>
+                </div>
+
+            <!-- Students Degree -->
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="sdegree">Student Degree:</label><br>
+                        <select class="form-control" id="sdegree">
+                            <option>Associates</option>
+                            <option>Bachelor's</option>
+                            <option>Masters</option>
+                        </select>
+                    </div>
+                </div>
+
+            <!-- Students Program -->
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="sprogram">Program:</label><br>
+                        <select class="form-control" id="sprogram">
+                            <option>Electronics</option>
+                            <option>Software Development</option>
+                            <option>NSA</option>
+                            <option>Project Managment</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!--Students Current Quarter -->
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="squarter">Current Quarter:</label><br>
+                        <select class="form-control" id="squarter">
+                            <option>1 Quarter</option>
+                            <option>2 Quarter</option>
+                            <option>3 Quarter</option>
+                            <option>4 Quarter</option>
+                            <option>5 Quarter</option>
+                            <option>6 Quarter</option>
+                            <option>Capstone</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Student Requested Person -->
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="scourse">Request Service From:</label><br>
+                        <select class="form-control" id="scourse">
+                            <option>Dean</option>
+                            <option>IT Chairman</option>
+                            <option>Drafting & Design Chairman</option>
+                            <option>Bussiness Chairman</option>
+                            <option>Electronics Chairman</option>
+                            <option>Educations Chairman</option>
+                            <option>School Director</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Student Class Requests -->
+                <!-- <div class="row"> -->
+                <div class="col-md-3 col-xs-12">
+                    <div class="form-group">
+                        <label for="sclass">Class Requests:</label><br>
+                        <select class="form-control" id="srequest">
+                            <option>Class Change</option>
+                            <option>Class Drop</option>
+                            <option>Class Request</option>
+                            <option>Theroy Request</option>
+                            <option>Degree Change</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Students Comment Box -->
+            <div class="row">
+                <div class="col-md-6    ">
+                    <div class="form-group">
+                    <label for="comment">Detailed Reason for this Request :</label><br>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sumbit Request Form -->
+            <div class="row">
+            <div class="col-md-3 col-xs-12 col-md-offset-2">
+                <div class="submit-or-cancel">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                    <!-- Cancel Request Form -->
+                    <button type="cancel" class="btn btn-default">Cancel</button>
+                </div>
+           </div>
+       </div>
+        </form>
+    </div><!-- /. container -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- The Footer -->
+    <nav class="navbar navbar-inverse page-footer">
+        <div class="container">
+            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#">Technical Support</a>
+            <a class="navbar-brand" href="#">Tutoring</a>
+        </div>
+     </nav>
+</body>
+</html>
