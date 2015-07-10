@@ -9,19 +9,16 @@
 	<!-- External Sheets -->
 	<script type="text/javascript" src="function.js"></script><!-- javascript/jquery -->
 	<link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Twitter Feed -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     <!-- end External Sheets -->
 </head>
 <body>
-    
+    <!-- panel nav -->
     <center>
         <div class="panel panel-default">
-                <div class="panel-body">
-                    Hello ITT Tech Stuent, please select the form your interested in.
-                </div>
-            </div>
-        </div>
+			<div class="panel-body">
+				Hello ITT Tech Stuent, please select the form your interested in.
+			</div>
+		</div>
     </center>
     <!-- First Modal Button Accademic Support -->
     <div class="row">
@@ -29,23 +26,6 @@
             <button type="button" class="btn btn-default btn-lg mybtn" data-toggle="modal" data-target="#myModal01">
                 Academic Affairs
             </button>
-        </div>
-    </div>
-    <!-- Second Modal Button Technical Support -->
-    <div class="row">
-        <div class="col-md-3 col-xs-12 col-md-offset-4">
-            <button type="button" class="btn btn-default btn-lg mybtn" data-toggle="modal" data-target="#myModal02">
-                Technical Support
-            </button>
-        </div>
-    </div>
-    <!-- Third Modal Button Tutroing -->
-    <div class="row">
-        <div class="col-md-3 col-xs-12 col-md-offset-4">
-            <button type="button" class="btn btn-default btn-lg mybtn" data-toggle="modal" data-target="#myModal03">
-                Tutoring
-            </button>
-            <a class="twitter-timeline" href="https://twitter.com/YosemiteNPS" data-widget-id="615562910987780096">Tweets by @YosemiteNPS</a>
         </div>
     </div>
     
@@ -59,411 +39,133 @@
                     <h4 class="modal-title" id="myModalLabel">Accademic Affairs Form</h4>
                 </div>
                 <div class="modal-body">
-                <!-- Date Picker -->
-                <div class="row">
-                    <div class="col-md-3 col-xs-12 col-md-offset-9">
-                        <label for="dpicker">Sellect the Date:</label><br>
-                        <input type="date" class="form-control">
-                    </div>
-                </div><!-- /. row -->
-                <!-- End Date Picker -->
-                <!-- Students Name Box -->
-                <div class="row">
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="sname">Students Name:</label><br>
-                            <input type="sname" class="form-control" id="sname" placeholder="John Doe">
-                        </div>
-                    </div>
-                    <!-- Students School ID Box -->    
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="sid">Student ID:</label><br>
-                            <input type="sid" class="form-control" id="sid" placeholder="00000000">
-                        </div>
-                    </div>
-                    <!--Students Email -->
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="sid">Student Email:</label><br>
-                            <input type="text" class="form-control" placeholder="User Email" aria-describedby="basic-addon2">
-                            <!--<span class="input-group-addon" id="basic-addon2">@email.itt-tech.edu</span> -->
-                        </div>
-                    </div>
-                </div>
-                <!-- Student Contact Number -->
-                <div class="row">
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="sphone#">Contact Number:</label><br>
-                            <input type="sphone#" class="form-control" id="sphone#" placeholder="555-555-5555">
-                        </div>
-                    </div>
-                    <!-- Students Degree -->
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="sdegree">Student Degree:</label><br>
-                            <select class="form-control" id="sdegree">
-                                <option>Associates</option>
-                                <option>Bachelor's</option>
-                                <option>Masters</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- Students Program -->
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="sprogram">Program:</label><br>
-                            <select class="form-control" id="sprogram">
-                                <option>Electronics</option>
-                                <option>Software Development</option>
-                                <option>NSA</option>
-                                <option>Project Managment</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <!--Students Current Quarter -->
-                <div class="row">
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="squarter">Current Quarter:</label><br>
-                            <select class="form-control" id="squarter">
-                                <option>1 Quarter</option>
-                                <option>2 Quarter</option>
-                                <option>3 Quarter</option>
-                                <option>4 Quarter</option>
-                                <option>5 Quarter</option>
-                                <option>6 Quarter</option>
-                                <option>Capstone</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- Student Requested Person -->
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="scourse">Request Service From:</label><br>
-                            <select class="form-control" id="scourse">
-                                <option>Dean</option>
-                                <option>IT Chairman</option>
-                                <option>Drafting & Design Chairman</option>
-                                <option>Bussiness Chairman</option>
-                                <option>Electronics Chairman</option>
-                                <option>Educations Chairman</option>
-                                <option>School Director</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- Student Class Requests -->
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="sclass">Class Requests:</label><br>
-                            <select class="form-control" id="srequest">
-                                <option>Class Change</option>
-                                <option>Class Drop</option>
-                                <option>Class Request</option>
-                                <option>Theroy Request</option>
-                                <option>Degree Change</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <!-- Students Comment Box -->
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="comment">Detailed Reason for this Request :</label><br>
-                            <textarea class="form-control" rows="5" id="comment"></textarea>
-                        </div>
-                    </div>
-                </div>
-                </div>
+	                <!-- Date Picker -->
+	                <div class="row">
+	                    <div class="col-md-3 col-xs-12 col-md-offset-9">
+	                        <label for="dpicker">Sellect the Date:</label><br>
+	                        <input type="date" class="form-control">
+	                    </div>
+	                </div><!-- /. row -->
+	                <!-- End Date Picker -->
+	                <!-- Students Name Box -->
+	                <div class="row">
+	                    <div class="col-md-4 col-xs-12">
+	                        <div class="form-group">
+	                            <label for="sname">Students Name:</label><br>
+	                            <input type="sname" class="form-control" id="sname" placeholder="John Doe">
+	                        </div>
+	                    </div>
+	                    <!-- Students School ID Box -->    
+	                    <div class="col-md-4 col-xs-12">
+	                        <div class="form-group">
+	                            <label for="sid">Student ID:</label><br>
+	                            <input type="sid" class="form-control" id="sid" placeholder="00000000">
+	                        </div>
+	                    </div>
+	                    <!--Students Email -->
+	                    <div class="col-md-4 col-xs-12">
+	                        <div class="form-group">
+	                            <label for="sid">Student Email:</label><br>
+	                            <input type="text" class="form-control" placeholder="User Email" aria-describedby="basic-addon2">
+	                            <!--<span class="input-group-addon" id="basic-addon2">@email.itt-tech.edu</span> -->
+	                        </div>
+	                    </div>
+	                </div>
+	                <!-- Student Contact Number -->
+	                <div class="row">
+	                    <div class="col-md-4 col-xs-12">
+	                        <div class="form-group">
+	                            <label for="sphone#">Contact Number:</label><br>
+	                            <input type="sphone#" class="form-control" id="sphone#" placeholder="555-555-5555">
+	                        </div>
+	                    </div>
+	                    <!-- Students Degree -->
+	                    <div class="col-md-4 col-xs-12">
+	                        <div class="form-group">
+	                            <label for="sdegree">Student Degree:</label><br>
+	                            <select class="form-control" id="sdegree">
+	                                <option>Associates</option>
+	                                <option>Bachelor's</option>
+	                                <option>Masters</option>
+	                            </select>
+	                        </div>
+	                    </div>
+	                    <!-- Students Program -->
+	                    <div class="col-md-4 col-xs-12">
+	                        <div class="form-group">
+	                            <label for="sprogram">Program:</label><br>
+	                            <select class="form-control" id="sprogram">
+	                                <option>Electronics</option>
+	                                <option>Software Development</option>
+	                                <option>NSA</option>
+	                                <option>Project Managment</option>
+	                            </select>
+	                        </div>
+	                    </div>
+	                </div>
+	                <!--Students Current Quarter -->
+	                <div class="row">
+	                    <div class="col-md-4 col-xs-12">
+	                        <div class="form-group">
+	                            <label for="squarter">Current Quarter:</label><br>
+	                            <select class="form-control" id="squarter">
+	                                <option>1 Quarter</option>
+	                                <option>2 Quarter</option>
+	                                <option>3 Quarter</option>
+	                                <option>4 Quarter</option>
+	                                <option>5 Quarter</option>
+	                                <option>6 Quarter</option>
+	                                <option>Capstone</option>
+	                            </select>
+	                        </div>
+	                    </div>
+	                    <!-- Student Requested Person -->
+	                    <div class="col-md-4 col-xs-12">
+	                        <div class="form-group">
+	                            <label for="scourse">Request Service From:</label><br>
+	                            <select class="form-control" id="scourse">
+	                                <option>Dean</option>
+	                                <option>IT Chairman</option>
+	                                <option>Drafting & Design Chairman</option>
+	                                <option>Bussiness Chairman</option>
+	                                <option>Electronics Chairman</option>
+	                                <option>Educations Chairman</option>
+	                                <option>School Director</option>
+	                            </select>
+	                        </div>
+	                    </div>
+	                    <!-- Student Class Requests -->
+	                    <div class="col-md-4 col-xs-12">
+	                        <div class="form-group">
+	                            <label for="sclass">Class Requests:</label><br>
+	                            <select class="form-control" id="srequest">
+	                                <option>Class Change</option>
+	                                <option>Class Drop</option>
+	                                <option>Class Request</option>
+	                                <option>Theroy Request</option>
+	                                <option>Degree Change</option>
+	                            </select>
+	                        </div>
+	                    </div>
+	                </div>
+	                <!-- Students Comment Box -->
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group">
+	                            <label for="comment">Detailed Reason for this Request :</label><br>
+	                            <textarea class="form-control" rows="5" id="comment"></textarea>
+	                        </div>
+	                    </div>
+	                </div>
+                </div><!-- /. modal-body -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Submit</button>
-                </div>
+                </div><!-- modal-footer -->
             </div><!-- /. modal-content -->
         </div><!-- /. modal-dialog -->
     </div><!-- /. modal -->
-    <!-- END OF FIRST MODAL BY VICTOR -->
+    <!-- end of Modal -->
 
-
-    <!-- Second Modal Triggered Technical Support -->
-    <div class="modal fade " id="myModal02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Technical Support Form</h4>
-          </div>
-          <div class="modal-body">
-                <!-- Date Picker -->
-                <div class="row">
-                    <div class="col-md-3 col-xs-12 col-md-offset-9">
-                        <label for="dpicker">Select the Date:</label><br>
-                        <input type="date" class="form-control">
-                    </div>
-                </div><!-- /. row -->
-                <!-- End Date Picker -->
-                <!-- Students Name Box -->
-                <div class="row">
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="sname">Students Name Last:</label><br>
-                            <input type="sname" class="form-control" id="sname" placeholder="Student Name">
-                        </div>
-                    </div>
-                    <!-- Students School ID Box -->    
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="sid">Student ID:</label><br>
-                            <input type="sid" class="form-control" id="sid" placeholder="Students School ID">
-                        </div>
-                    </div>
-                <!--Students Email -->
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="sid">Student Email:</label><br>
-                            <input type="text" class="form-control" placeholder="User Email" aria-describedby="basic-addon2">
-                            <!--<span class="input-group-addon" id="basic-addon2">@email.itt-tech.edu</span> -->
-                        </div>
-                    </div>
-                </div>
-                <!-- Student Contact Number -->
-                <div class="row">
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="sphone#">Contact Number:</label><br>
-                            <input type="sphone#" class="form-control" id="sphone#" placeholder="555-555-5555">
-                        </div>
-                    </div>
-                <!-- Students Degree -->
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="sdegree">Student Degree:</label><br>
-                            <select class="form-control" id="sdegree">
-                                <option>Associates</option>
-                                <option>Bachelor's</option>
-                                <option>Masters</option>
-                            </select>
-                        </div>
-                    </div>
-                <!-- Students Program -->
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="sprogram">Program:</label><br>
-                            <select class="form-control" id="sprogram">
-                                <option>Electronics</option>
-                                <option>Software Development</option>
-                                <option>NSA</option>
-                                <option>Project Managment</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <!--Students Current Quarter -->
-                <div class="row">
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="squarter">Current Quarter:</label><br>
-                            <select class="form-control" id="squarter">
-                                <option>1 Quarter</option>
-                                <option>2 Quarter</option>
-                                <option>3 Quarter</option>
-                                <option>4 Quarter</option>
-                                <option>5 Quarter</option>
-                                <option>6 Quarter</option>
-                                <option>Capstone</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- Student Requested Person -->
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="office365">Office 365:</label><br>
-                            <select class="form-control" id="ofice365">
-                                <option>Downlaoding</option>
-                                <option>Installing</option>
-                                <option>Opening</option>
-                                <option>#</option>
-                                <option>#</option>
-                                <option>#</option>
-                                <option>#</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- Student Class Requests -->
-                    <!-- <div class="row"> -->
-                    <div class="col-md-4 col-xs-12">
-                        <div class="form-group">
-                            <label for="sclass">Class Requests:</label><br>
-                            <select class="form-control" id="srequest">
-                                <option>Class Change</option>
-                                <option>Class Drop</option>
-                                <option>Class Request</option>
-                                <option>Theroy Request</option>
-                                <option>Degree Change</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <!-- Students Comment Box -->
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                        <label for="comment">Detailed Reason for this Request :</label><br>
-                        <textarea class="form-control" rows="5" id="comment"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div><!-- /. container -->
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Submit</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Third Modal Triggered Tutoring -->
-    <div class="modal fade " id="myModal03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-          </div>
-          <div class="modal-body">
-                <!-- Date Picker -->
-                <div class="row">
-                    <div class="col-md-2 col-xs-12 col-md-offset-7">
-                        <label for="dpicker">Sellect the Date:</label><br>
-                        <input type="date" class="form-control">
-                    </div>
-                </div><!-- /. row -->
-                <!-- End Date Picker -->
-                <!-- Students Name Box -->
-                <div class="row">
-                    <div class="col-md-3 col-xs-12">
-                        <div class="form-group">
-                            <label for="sname">Students Name:</label><br>
-                            <input type="sname" class="form-control" id="sname" placeholder="Student Name">
-                        </div>
-                    </div>
-                    <!-- Students School ID Box -->    
-                    <div class="col-md-3 col-xs-12">
-                        <div class="form-group">
-                            <label for="sid">Student ID:</label><br>
-                            <input type="sid" class="form-control" id="sid" placeholder="Students School ID">
-                        </div>
-                    </div>
-                <!--Students Email -->
-                    <div class="col-md-3 col-xs-12">
-                        <div class="form-group">
-                            <label for="sid">Student Email:</label><br>
-                            <input type="text" class="form-control" placeholder="User Email" aria-describedby="basic-addon2">
-                            <!--<span class="input-group-addon" id="basic-addon2">@email.itt-tech.edu</span> -->
-                        </div>
-                    </div>
-                </div>
-                <!-- Student Contact Number -->
-                <div class="row">
-                    <div class="col-md-3 col-xs-12">
-                        <div class="form-group">
-                            <label for="sphone#">Contact Number:</label><br>
-                            <input type="sphone#" class="form-control" id="sphone#" placeholder="555-555-5555">
-                        </div>
-                    </div>
-                <!-- Students Degree -->
-                    <div class="col-md-3 col-xs-12">
-                        <div class="form-group">
-                            <label for="sdegree">Student Degree:</label><br>
-                            <select class="form-control" id="sdegree">
-                                <option>Associates</option>
-                                <option>Bachelor's</option>
-                                <option>Masters</option>
-                            </select>
-                        </div>
-                    </div>
-                <!-- Students Program -->
-                    <div class="col-md-3 col-xs-12">
-                        <div class="form-group">
-                            <label for="sprogram">Program:</label><br>
-                            <select class="form-control" id="sprogram">
-                                <option>Electronics</option>
-                                <option>Software Development</option>
-                                <option>NSA</option>
-                                <option>Project Managment</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <!--Students Current Quarter -->
-                <div class="row">
-                    <div class="col-md-3 col-xs-12">
-                        <div class="form-group">
-                            <label for="squarter">Current Quarter:</label><br>
-                            <select class="form-control" id="squarter">
-                                <option>1 Quarter</option>
-                                <option>2 Quarter</option>
-                                <option>3 Quarter</option>
-                                <option>4 Quarter</option>
-                                <option>5 Quarter</option>
-                                <option>6 Quarter</option>
-                                <option>Capstone</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- Student Requested Person -->
-                    <div class="col-md-3 col-xs-12">
-                        <div class="form-group">
-                            <label for="scourse">Request Service From:</label><br>
-                            <select class="form-control" id="scourse">
-                                <option>Dean</option>
-                                <option>IT Chairman</option>
-                                <option>Drafting & Design Chairman</option>
-                                <option>Bussiness Chairman</option>
-                                <option>Electronics Chairman</option>
-                                <option>Educations Chairman</option>
-                                <option>School Director</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- Student Class Requests -->
-                    <div class="col-md-3 col-xs-12">
-                        <div class="form-group">
-                            <label for="sclass">Class Requests:</label><br>
-                            <select class="form-control" id="srequest">
-                                <option>Class Change</option>
-                                <option>Class Drop</option>
-                                <option>Class Request</option>
-                                <option>Theroy Request</option>
-                                <option>Degree Change</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <!-- Students Comment Box -->
-                <div class="row">
-                    <div class="col-md-6    ">
-                        <div class="form-group">
-                        <label for="comment">Detailed Reason for this Request :</label><br>
-                        <textarea class="form-control" rows="5" id="comment"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div><!-- /. container -->
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
 </html>
